@@ -12,7 +12,7 @@ function saveCart(){ localStorage.setItem('cart', JSON.stringify(state.cart)); u
 function updateCartBadge(){ const el=q('#cartCount'); if(el){ el.textContent = state.cart.reduce((s,i)=>s+i.qty,0); } }
 
 async function loadProducts(){
-  const res = await fetch('docs/products.json');
+  const res = await fetch('products.json');
   state.products = await res.json();
 }
 
