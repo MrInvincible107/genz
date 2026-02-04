@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — FoxnutsCo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">Foxnuts<span>Co</span></a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/shop" class="active">Shop</a>
+        <a href="/#why">Why Foxnuts?</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <button id="cartButton" class="cart-btn" aria-label="Open cart">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="section-head">
+      <h1>All Products</h1>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search flavours…" />
+        <select id="sort">
+          <option value="popularity">Sort: Popularity</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="productGrid" class="product-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Foxnuts<span>Co</span></div>
+        <p class="muted">© <span id="year"></span> FoxnutsCo.</p>
+      </div>
+      <div class="links">
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-panel">
+      <div class="cart-head">
+        <h4>Your Cart</h4>
+        <button id="closeCart" aria-label="Close cart">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-foot">
+        <div><span>Subtotal:</span> <strong id="cartSubtotal">₹0.00</strong></div>
+        <button id="checkoutBtn" class="btn primary full">Checkout (demo)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

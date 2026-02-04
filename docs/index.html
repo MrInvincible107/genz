@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GenZ Nuts Co.</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+  <link rel="manifest" href="/static/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">GenZ<span>Nuts</span></a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="#why">Why Foxnuts?</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="cartButton" class="cart-btn" aria-label="Open cart">🛒 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Wholesome <span class="highlight">Foxnuts</span>, Big on Crunch.</h1>
+          <p>Roasted foxnuts in lip‑smacking flavours. Clean labels, clean snacking.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="/shop">Shop now</a>
+            <a class="btn" href="#why">Why foxnuts?</a>
+          </div>
+        </div>
+        <img class="hero-img" src="/static/bg.png" alt="Bowl of roasted snacks" />
+      </div>
+    </section>
+
+    <section class="badges">
+      <div class="container badges-grid">
+        <div class="badge">Gluten‑Free</div>
+        <div class="badge">Non‑GMO</div>
+        <div class="badge">No Preservatives</div>
+        <div class="badge">Roasted, not fried</div>
+        <div class="badge">Antioxidants</div>
+      </div>
+    </section>
+
+    <section class="container" id="featured">
+      <div class="section-head">
+        <h2>Shop flavours</h2>
+        <a class="link" href="/shop">View all</a>
+      </div>
+      <div id="featuredGrid" class="product-grid"></div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="container why-grid">
+        <div>
+          <h3>Why foxnuts?</h3>
+          <p>Light, crunchy, and naturally gluten‑free. A perfect anytime snack that doesn’t weigh you down.</p>
+          <ul class="why-list">
+            <li>Low calories, high satiety</li>
+            <li>Plant‑based, clean ingredients</li>
+            <li>Gently roasted for extra crunch</li>
+            <li>No artificial preservatives</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Nutrition at a glance (per 30g)</h4>
+          <div class="nutri">
+            <div><span class="num">350</span><span>kcal</span></div>
+            <div><span class="num">9.7g</span><span>Protein</span></div>
+            <div><span class="num">1g</span><span>Fat</span></div>
+            <div><span class="num">76.9g</span><span>Carbs</span></div>
+          </div>
+          <small>*Approximate values. Update with your lab data.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h3>Wholesale & Stockists</h3>
+      <p><a href="mailto:rbms.info@gmail.com">E-Mail</a> us at for bulk enquiries.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">GenZ<span>Nuts</span></div>
+        <p class="muted">© <span id="year"></span> GenZNuts Co. Made with clean ingredients.</p>
+      </div>
+      <div class="links">
+        <a href="/shop">All Products</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-panel">
+      <div class="cart-head">
+        <h4>Your Cart</h4>
+        <button id="closeCart" aria-label="Close cart">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-foot">
+        <div><span>Subtotal:</span> <strong id="cartSubtotal">₹0.00</strong></div>
+        <button id="checkoutBtn" class="btn primary full">Checkout (demo)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

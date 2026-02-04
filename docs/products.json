@@ -1,0 +1,21 @@
+[
+  {
+    "id": "black-salt-55",
+    "name": "Curry Leaf",
+    "price": 120,
+    "image": "static/1.png",
+    "tag": "Bestseller"
+  },
+  {
+    "id": "cheezy-peezy-80",
+    "name": "Mint Pudina",
+    "price": 120,
+    "image": "static/2.png"
+  },
+  {
+    "id": "peri-peri-80",
+    "name": "Peri-Peri",
+    "price": 120,
+    "image": "static/3.png"
+  }
+]
